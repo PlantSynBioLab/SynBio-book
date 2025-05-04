@@ -1,0 +1,43 @@
+project:
+  type: book
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+bibliography: references.bib
+book:
+  title: "Engineering Biology"
+  author: "R. Clay Wright"
+  date: "5/2/2025"
+  chapters:
+    - index.qmd
+    - chapters/01_Syllabus.qmd
+    - chapters/02_Kit_of_Parts.qmd
+    - chapters/03_Review_of_Biology_Biochemistry.qmd
+    - chapters/04_Recombinant_DNA_technology.qmd
+    - chapters/05_Introduction_to_Auxin.qmd
+    - chapters/06_Lab_orientation:_Safety.qmd
+    - chapters/07_Biological_Parts_(Protein_expression_and_plasmids).qmd
+    - chapters/08_Bioinformatics:_Tools_for_working_with_biological_sequences.qmd
+    - chapters/09_Modular_Cloning.qmd
+    - chapters/10_Hypotheses.qmd
+    - chapters/11_Level_0_Part_Plasmid_Design.qmd
+    - chapters/12_Measuring_Biology.qmd
+    - chapters/13_Level_1_Transcriptional_Unit_Design.qmd
+    - chapters/14_Level_2_Multicassette_Plasmid_Design.qmd
+    - chapters/15_Finalizing_Designs.qmd
+    - chapters/16_Opentrons_Lab_automation.qmd
+    - chapters/17_Minipreps.qmd
+    - chapters/18_DNA_spectrophotometry.qmd
+    - chapters/19_DNA_Assembly_Methods.qmd
+    - chapters/20_Setting_up_Level_1_Assemblies.qmd
+    - chapters/21_Final_projects.qmd
+    - chapters/22_PCR_primer_design.qmd
+    - chapters/23_Gel_Electrophoresis.qmd
+    - chapters/24_Colony_PCR.qmd
+    - chapters/25_Genome_Engineering.qmd
+    - chapters/26_Yeast_Transformation.qmd
+    - chapters/27_Sequencing_Analysis.qmd
+    - chapters/28_Flow_Cytometry.qmd
+    - references.qmd
