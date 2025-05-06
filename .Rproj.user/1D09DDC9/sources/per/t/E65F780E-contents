@@ -1,0 +1,20 @@
+---
+author: "R. Clay Wright"
+description: "A course-based undergraduate and graduate synthetic biology research experience textbook."
+---
+
+# Preface {.unnumbered}
+
+This book supports the Synthetic Biology CuRE course at Virginia Tech BSE 4014/5014.
+
+## Acknowledgments
+
+The development of this course and the associated text here has been supported by many people and funding organizations to which I am extremely grateful. 
+
+Thanks to my colleagues at Virginia Tech who encouraged me to develop this course. Thanks to my mentors Jennifer Nemhauser, Eric Klavins, and Britney Moss for fostering my interest and training in pedagogy and helping me with the scaffold for the initial iteration of this course. Thanks to all of the students who have given me helpful feedback about the course and materials along the way. 
+
+Thanks to the Virginia Space Grant Consortium for providing funding to develop the first iteration of this course. Thanks to Opentrons for providing an OT-2 for the course and discounts on pipettes and modules. Thanks to the VT Office of Undergraduate Research for providing support for developing scalable projects to summer undergraduate researchers. 
+
+This is a Quarto book.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.

@@ -1,0 +1,126 @@
+---
+title: "Level 0 Part Plasmid Design"
+---
+
+## Overview
+
+This chapter introduces students to experimental design in the context of synthetic biology and the practical construction of Level 0 part plasmids using Modular Cloning (MoClo) and the Yeast Toolkit (YTK).
+
+We build on the previous lecture's discussion of MoClo principles and emphasize hands-on experience with designing and assembling modular DNA parts for use in downstream genetic circuits.
+
+## Review of Modular Cloning (MoClo)
+
+Modular Cloning allows the assembly of genetic parts—promoters, coding sequences, terminators, and other regulatory elements—into standardized expression cassettes. Each part is cloned into a **Level 0 plasmid**, which can be stored, replicated, and reused.
+
+### Key Principles
+
+- Uses **Type IIS restriction enzymes** (e.g., BsaI and BsmBI) that cut outside their recognition sites, allowing for **scarless assembly**.
+- Each part is flanked by **standardized 4 bp overhangs**, which determine its position and compatibility within an expression cassette.
+- Level 0 parts can be assembled into **Level 1 cassettes** (single gene), and multiple Level 1 cassettes can be assembled into **Level 2 constructs** (multigene systems).
+
+> TODO: Insert diagram illustrating MoClo hierarchy (L0, L1, L2).
+
+## Software Tools for Primer and Part Design
+
+### Benchling
+
+Benchling is a browser-based molecular biology tool for sequence annotation, primer design, and cloning simulations.
+
+**To use Benchling:**
+
+1. Import or create your DNA sequence.
+2. Annotate regions (promoter, CDS, terminator).
+3. Use the *"Primer"* tool to design and label forward and reverse primers.
+4. For reverse primers, use the *"Copy Special > Reverse Complement"* option.
+5. Simulate Golden Gate assembly using *Assembly Wizards* or manual cloning.
+
+### Ape (A Plasmid Editor)
+
+Ape is a downloadable tool that allows simple manipulation of DNA sequences.
+
+- Supports reverse complement operations and editing.
+- Useful for flipping 3′ to 5′ primers back into 5′ to 3′ notation.
+
+> TODO: Include screenshot of Benchling or Ape with primer annotations.
+
+## Activity Instructions
+
+Students worked from:
+
+- **YTK Assembly Manual (pages 12–26)**: This guide details how to construct each part type using standardized overhangs and restriction sites.
+- **YTK Overhangs Primers Sheet (Google Sheets)**: Shared class document for assigning and recording primer sequences and overhangs.
+
+### Group Workflow
+
+1. Open the manual and locate your assigned part type (e.g., Type 1, 2, 3A, 3B...).
+2. Record the **part name**, **5′ overhang**, **3′ overhang**.
+3. Design forward and reverse primers:
+    - Forward primer = [GC clamp] + [BsaI site] + [part-specific overhang] + [homology to template]
+    - Reverse primer = Same logic, but **reverse complement** of the sequence
+
+> TODO: Add primer design template for students to follow.
+
+### Primer Design Guidelines
+
+- Primers should always be written 5′ → 3′.
+- Include at least 4 bp **GC clamp** before the restriction site.
+- Use **BsaI** recognition site (GGTCTC) for Level 0 assembly.
+- Add part-specific overhangs immediately downstream of the enzyme site.
+- Add **GG** for fusion proteins (e.g., Type 3B parts) to maintain codon frame.
+- Include a **stop codon** and/or **XhoI site** for terminator parts as needed.
+
+> TODO: Insert example primer sequence and breakdown of its components.
+
+## Practical Considerations
+
+### In-Frame Assembly
+
+- Coding sequences often require special care to preserve the reading frame across part boundaries.
+- For example, combining Type 3A and 3B parts (both coding) needs a GG insertion to keep translation in-frame.
+
+### Negative Controls
+
+- Use mutant promoters (e.g., PIA19mut) that lack binding sites to demonstrate ARF-specific activation.
+- Design primers that omit ARFs or use constitutively inactive variants as negative controls.
+
+> TODO: Provide table of part types and expected features (start codon, stop codon, etc.).
+
+## Constructing Level 0 Parts
+
+To make a new Level 0 part:
+
+1. Identify the **source sequence** (synthesized, genomic DNA, etc.).
+2. Design primers to amplify the sequence:
+   - Add **BsaI site**, overhangs, and homology arms.
+3. PCR amplify the part.
+4. Digest both the PCR product and **Level 0 entry vector** with BsaI.
+5. Ligate the digested insert and vector.
+6. Transform into competent **E. coli** and select colonies.
+7. Screen clones by colony PCR or sequencing.
+
+> TODO: Include diagram showing Level 0 assembly via Golden Gate.
+
+## Troubleshooting Tips
+
+- Double-check primer orientation and melting temperatures (55–72°C).
+- Avoid internal BsaI or BsmBI sites within the part sequence.
+- Use Benchling to simulate and verify assembly.
+
+## Summary
+
+This activity combined theoretical and practical training in modular cloning. Students learned to:
+
+- Navigate cloning toolkits and design compatible parts
+- Use software to annotate sequences and design primers
+- Understand the logic of MoClo part assembly
+
+These skills will be applied to build expression cassettes and multigene constructs for synthetic biology experiments in upcoming weeks.
+
+> TODO: Link to shared Google Sheet with part assignments and example sequences.
+
+## Next Steps
+
+- Finalize primer designs for assigned part types.
+- Submit sequences for synthesis or begin PCR amplification.
+- Prepare for Level 0 part cloning and validation.
+

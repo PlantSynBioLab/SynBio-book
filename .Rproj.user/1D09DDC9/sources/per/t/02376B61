@@ -1,0 +1,24 @@
+{
+    "id": "02376B61",
+    "path": "~/Documents/GitHub/SynBio-book/renv/activate.R",
+    "project_path": "renv/activate.R",
+    "type": "r_source",
+    "hash": "1595255672",
+    "contents": "",
+    "dirty": false,
+    "created": 1746499592652.0,
+    "source_on_save": false,
+    "relative_order": 11,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1746499252,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1746499252,
+    "read_only": false,
+    "read_only_alternatives": []
+}
